@@ -1,0 +1,3 @@
+[submodule "submodules/roku-automation"]
+	path = submodules/roku-automation
+	url = https://github.com/rokudev/automated-channel-testing
