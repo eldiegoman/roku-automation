@@ -4,23 +4,15 @@
   "description": "Roku automation test framework",
   "main": "index.js",
   "scripts": {
-    "test": "mocha \"src/__tests__/**/*.test.js\""
+    "test": "mocha \"src/__tests__/**/*.test.js\"",
+    "lint": "eslint \"src/**/*.js\"",
+    "pretty": "prettier --write \"src/**/*.js\""
   },
   "keywords": [
     "roku-automation"
   ],
   "author": "diego.monroy@globant.com",
   "license": "ISC",
-  "dependencies": {
-    "@babel/runtime": "^7.11.2",
-    "axios": "^0.20.0",
-    "babel-jest": "^26.3.0",
-    "child_process": "^1.0.2",
-    "dotenv": "^8.2.0",
-    "form-data": "^3.0.0",
-    "jest": "^26.4.2",
-    "nock": "^13.0.4"
-  },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
@@ -28,8 +20,18 @@
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
     "@babel/register": "^7.11.5",
+    "@babel/runtime": "^7.11.2",
+    "axios": "^0.20.0",
+    "babel-jest": "^26.3.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "chai": "^4.2.0",
+    "child_process": "^1.0.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.10.0",
+    "form-data": "^3.0.0",
     "mocha": "^8.1.3",
-    "nodemon": "^2.0.4"
+    "nock": "^13.0.4",
+    "nodemon": "^2.0.4",
+    "prettier": "2.1.2"
   }
 }
